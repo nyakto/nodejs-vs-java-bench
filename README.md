@@ -1,3 +1,8 @@
+Для запуска необходимо наличие следующих пакетов:
+```Bash
+sudo apt-get install make g++ nodejs npm openjdk-7-jdk
+```
+
 Мои результаты тестов:
 
 c++ x 0.18 ops/sec ±0.23% (5 runs sampled)
