@@ -1,7 +1,6 @@
 NODEJS ?= node
 GCC ?= g++
 JAVAC ?= javac
-JAVA ?= java
 
 SRC_DIR := src
 TARGET_DIR := target
