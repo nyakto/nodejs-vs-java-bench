@@ -3,19 +3,19 @@ var spawn = require('child_process').spawn;
 var suite = new Benchmark.Suite();
 
 suite.add(
-	createBench('c++', './primes', [])
+	createBench('c++', './target/primes', [])
 );
 
 suite.add(
-	createBench('java', 'java', ['primes'])
+	createBench('java', 'java', ['-cp', 'target', 'primes'])
 );
 
 suite.add(
-	createBench('node.js', 'node', ['primes.js'])
+	createBench('node.js', 'node', ['src/primes.js'])
 );
 
 /*suite.add(
-	createBench('python', 'python', ['primes.py'])
+	createBench('python', 'python', ['src/primes.py'])
 );*/
 
 suite.on('cycle', function(event) {
