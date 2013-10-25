@@ -1,0 +1,8 @@
+{
+	"name": "nodejs-vs-java",
+	"version": "0.0.1",
+	"private": true,
+	"dependencies": {
+		"benchmark": "~1.0.0"
+	}
+}
