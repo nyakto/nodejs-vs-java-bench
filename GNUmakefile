@@ -26,7 +26,7 @@ $(NODE_MODULES):: package.json
 	if [ -d $(NODE_MODULES) ]; then touch $(NODE_MODULES); else mkdir $(NODE_MODULES); fi
 
 $(TARGET_DIR)::
-	mkdir $(TARGET_DIR)
+	if ! [ -d $(TARGET_DIR) ]; then mkdir $(TARGET_DIR); fi
 
 clean::
 	rm -rf $(TARGET_DIR)
