@@ -19,7 +19,7 @@ $(TARGET_DIR)/primes.class:: $(TARGET_DIR) $(SRC_DIR)/primes.java
 	$(JAVAC) $(SRC_DIR)/primes.java -d $(TARGET_DIR)
 
 $(TARGET_DIR)/primes:: $(TARGET_DIR) $(SRC_DIR)/primes.cpp
-	$(GCC) $(SRC_DIR)/primes.cpp -o $@
+	$(GCC) -O3 $(SRC_DIR)/primes.cpp -o $@
 
 $(NODE_MODULES):: package.json
 	npm install
